@@ -14,9 +14,14 @@
 		0F207C2B1D7BD9D5000BA8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F207C291D7BD9D5000BA8E8 /* LaunchScreen.storyboard */; };
 		0F207C351D7BDB86000BA8E8 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F207C341D7BDB86000BA8E8 /* InitViewController.swift */; };
 		0F207C391D7BDC46000BA8E8 /* whooing_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F207C381D7BDC46000BA8E8 /* whooing_icon.png */; };
+		0F207C3B1D7BF058000BA8E8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F207C3A1D7BF058000BA8E8 /* WebViewController.swift */; };
+		0F207C3F1D7BF586000BA8E8 /* Dimmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F207C3E1D7BF586000BA8E8 /* Dimmable.swift */; };
+		0F207C631D7C17E9000BA8E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F207C621D7C17E9000BA8E8 /* MainViewController.swift */; };
+		F5F3D6D8910E67FD563C5441 /* Pods_WhooingCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C97C1E07BCB3B2247332E3 /* Pods_WhooingCal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096FB07D853B96A7084A0976 /* Pods-WhooingCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhooingCal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhooingCal/Pods-WhooingCal.debug.xcconfig"; sourceTree = "<group>"; };
 		0F207C1A1D7BD9D5000BA8E8 /* WhooingCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhooingCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F207C1D1D7BD9D5000BA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F207C221D7BD9D5000BA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +31,12 @@
 		0F207C2C1D7BD9D5000BA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F207C341D7BDB86000BA8E8 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitViewController.swift; path = ../InitViewController.swift; sourceTree = "<group>"; };
 		0F207C381D7BDC46000BA8E8 /* whooing_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whooing_icon.png; sourceTree = "<group>"; };
+		0F207C3A1D7BF058000BA8E8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		0F207C3E1D7BF586000BA8E8 /* Dimmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimmable.swift; sourceTree = "<group>"; };
+		0F207C441D7C0682000BA8E8 /* WhooingCal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhooingCal-Bridging-Header.h"; sourceTree = "<group>"; };
+		0F207C621D7C17E9000BA8E8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14C97C1E07BCB3B2247332E3 /* Pods_WhooingCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhooingCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE4BFBF7AFD10910B4E87BE /* Pods-WhooingCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhooingCal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhooingCal/Pods-WhooingCal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F3D6D8910E67FD563C5441 /* Pods_WhooingCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,8 @@
 			children = (
 				0F207C1C1D7BD9D5000BA8E8 /* WhooingCal */,
 				0F207C1B1D7BD9D5000BA8E8 /* Products */,
+				2F6AF7BF36ADC71C3CA187F1 /* Pods */,
+				216443CD399B6565FA5894F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +72,8 @@
 		0F207C1C1D7BD9D5000BA8E8 /* WhooingCal */ = {
 			isa = PBXGroup;
 			children = (
+				0F207C3C1D7BF064000BA8E8 /* ViewControllers */,
 				0F207C361D7BDC2B000BA8E8 /* Resources */,
-				0F207C341D7BDB86000BA8E8 /* InitViewController.swift */,
 				0F207C1D1D7BD9D5000BA8E8 /* AppDelegate.swift */,
 				0F207C211D7BD9D5000BA8E8 /* Main.storyboard */,
 				0F207C271D7BD9D5000BA8E8 /* Assets.xcassets */,
@@ -73,6 +87,7 @@
 		0F207C361D7BDC2B000BA8E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F207C3D1D7BF579000BA8E8 /* Supporting */,
 				0F207C371D7BDC3B000BA8E8 /* Images */,
 			);
 			name = Resources;
@@ -86,6 +101,42 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		0F207C3C1D7BF064000BA8E8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F207C341D7BDB86000BA8E8 /* InitViewController.swift */,
+				0F207C3A1D7BF058000BA8E8 /* WebViewController.swift */,
+				0F207C621D7C17E9000BA8E8 /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0F207C3D1D7BF579000BA8E8 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0F207C3E1D7BF586000BA8E8 /* Dimmable.swift */,
+				0F207C441D7C0682000BA8E8 /* WhooingCal-Bridging-Header.h */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		216443CD399B6565FA5894F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C97C1E07BCB3B2247332E3 /* Pods_WhooingCal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F6AF7BF36ADC71C3CA187F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				096FB07D853B96A7084A0976 /* Pods-WhooingCal.debug.xcconfig */,
+				BCE4BFBF7AFD10910B4E87BE /* Pods-WhooingCal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F207C2F1D7BD9D5000BA8E8 /* Build configuration list for PBXNativeTarget "WhooingCal" */;
 			buildPhases = (
+				F14970CFCC99117DCF64F745 /* [CP] Check Pods Manifest.lock */,
 				0F207C161D7BD9D5000BA8E8 /* Sources */,
 				0F207C171D7BD9D5000BA8E8 /* Frameworks */,
 				0F207C181D7BD9D5000BA8E8 /* Resources */,
+				CCBA30113CCD88B5FB413417 /* [CP] Embed Pods Frameworks */,
+				5839F89768D4E7DBE826BDD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,14 +208,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5839F89768D4E7DBE826BDD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhooingCal/Pods-WhooingCal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBA30113CCD88B5FB413417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhooingCal/Pods-WhooingCal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14970CFCC99117DCF64F745 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F207C161D7BD9D5000BA8E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0F207C261D7BD9D5000BA8E8 /* WhooingCal.xcdatamodeld in Sources */,
+				0F207C3F1D7BF586000BA8E8 /* Dimmable.swift in Sources */,
 				0F207C351D7BDB86000BA8E8 /* InitViewController.swift in Sources */,
+				0F207C631D7C17E9000BA8E8 /* MainViewController.swift in Sources */,
 				0F207C1E1D7BD9D5000BA8E8 /* AppDelegate.swift in Sources */,
+				0F207C3B1D7BF058000BA8E8 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,23 +377,30 @@
 		};
 		0F207C301D7BD9D5000BA8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096FB07D853B96A7084A0976 /* Pods-WhooingCal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhooingCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.madigun.WhooingCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhooingCal/WhooingCal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0F207C311D7BD9D5000BA8E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE4BFBF7AFD10910B4E87BE /* Pods-WhooingCal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhooingCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.madigun.WhooingCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhooingCal/WhooingCal-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -311,6 +423,7 @@
 				0F207C311D7BD9D5000BA8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

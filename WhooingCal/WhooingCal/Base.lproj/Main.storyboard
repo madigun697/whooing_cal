@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Init View Controller-->
@@ -47,12 +48,88 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="loadingLable" destination="Man-Up-hMS" id="wqe-g8-hyI"/>
                         <outlet property="whooingIcon" destination="hjd-iA-LGc" id="Rcu-8T-Vuz"/>
+                        <segue destination="Jbx-4C-J1H" kind="presentation" identifier="authSegue" id="WKb-ch-NwY"/>
+                        <segue destination="fGM-xV-kQJ" kind="show" identifier="goToMain" id="PyH-Er-0Sr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="564.5" y="476.5"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="kuk-FV-QNk">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="Jbx-4C-J1H" customClass="WebViewController" customModule="WhooingCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eef-ug-0U0"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNY-9n-7Ps"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rbx-Ka-9LQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSw-Ft-INe">
+                                <rect key="frame" x="6" y="70" width="343" height="547"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NSw-Ft-INe" secondAttribute="trailing" constant="10" id="3BW-y2-NzB"/>
+                            <constraint firstItem="NSw-Ft-INe" firstAttribute="centerX" secondItem="Rbx-Ka-9LQ" secondAttribute="centerX" id="BcW-pN-tM2"/>
+                            <constraint firstItem="SNY-9n-7Ps" firstAttribute="top" secondItem="NSw-Ft-INe" secondAttribute="bottom" constant="50" id="prW-Pq-KZI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NSw-Ft-INe" secondAttribute="leading" constant="10" id="qqe-Rx-wDx"/>
+                            <constraint firstItem="NSw-Ft-INe" firstAttribute="top" secondItem="eef-ug-0U0" secondAttribute="bottom" constant="50" id="y6R-JY-DFo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="NSw-Ft-INe" id="udp-XE-Gkq"/>
+                        <segue destination="60y-81-FDY" kind="unwind" identifier="unwindFromWeb" unwindAction="unwindFromWeb:" id="EJF-Ni-rM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fW-q5-mj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="60y-81-FDY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1123.5" y="-3.5"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="uyE-WR-Gqf">
+            <objects>
+                <viewController id="fGM-xV-kQJ" customClass="MainViewController" customModule="WhooingCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PBu-3g-sst"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCg-SI-dnl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ZN-MR-w2r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-c4-h0X">
+                                <rect key="frame" x="148" y="323" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QAW-ii-Z6l"/>
+                                    <constraint firstAttribute="width" constant="79" id="byM-AK-PHN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3p6-c4-h0X" firstAttribute="centerY" secondItem="4ZN-MR-w2r" secondAttribute="centerY" id="AQz-Ic-pSN"/>
+                            <constraint firstItem="3p6-c4-h0X" firstAttribute="centerX" secondItem="4ZN-MR-w2r" secondAttribute="centerX" id="wLQ-ad-K2Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="trF-nf-8h8"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fp7-ab-9qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.5" y="476.5"/>
         </scene>
     </scenes>
     <resources>

@@ -1,10 +1,13 @@
 PODS:
+  - Alamofire (3.4.2)
   - AsyncSwift (1.7.3)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.4)
   - AsyncSwift
 
 SPEC CHECKSUMS:
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
   AsyncSwift: f3ad5dd077bbd1477e7573e87071a532fedaca1a
 
 PODFILE CHECKSUM: 811fdb00d1b90601e4958d683752b0920dafebcb

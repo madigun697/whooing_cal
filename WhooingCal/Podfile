@@ -3,7 +3,10 @@
 
 target 'WhooingCal' do
 	use_frameworks!
-	pod "AsyncSwift"
-	pod 'Alamofire', '~> 3.4'
+	pod 'AsyncSwift'
+	pod 'Alamofire'
+    pod 'FSCalendar'
+    pod 'DCPathButton'
+    pod 'RAMAnimatedTabBarController'
 
 end

@@ -103,4 +103,5 @@
         ```
     4. Install libraries
     	`pod install --verbose`
- * 
+    5. Update Libraries
+		`pod update`

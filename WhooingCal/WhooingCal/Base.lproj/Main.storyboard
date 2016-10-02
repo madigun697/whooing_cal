@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Init View Controller-->
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="whooing_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjd-iA-LGc">
-                                <rect key="frame" x="137" y="108" width="100" height="100"/>
+                                <frame key="frameInset" minX="137" minY="108" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="W1G-X1-nWd"/>
                                     <constraint firstAttribute="width" constant="100" id="glj-fE-60A"/>
@@ -32,13 +33,13 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Now Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Man-Up-hMS">
-                                <rect key="frame" x="119" y="592" width="136" height="21"/>
+                                <frame key="frameInset" minX="119" minY="592" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hjd-iA-LGc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="7gh-mH-s6Y"/>
                             <constraint firstItem="Man-Up-hMS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KV3-Nn-S6M"/>
@@ -46,7 +47,6 @@
                             <constraint firstItem="hjd-iA-LGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWz-tx-B6x"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="loadingLable" destination="Man-Up-hMS" id="wqe-g8-hyI"/>
                         <outlet property="whooingIcon" destination="hjd-iA-LGc" id="Rcu-8T-Vuz"/>
@@ -71,11 +71,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSw-Ft-INe">
-                                <rect key="frame" x="6" y="70" width="343" height="547"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="NSw-Ft-INe" secondAttribute="trailing" constant="10" id="3BW-y2-NzB"/>
                             <constraint firstItem="NSw-Ft-INe" firstAttribute="centerX" secondItem="Rbx-Ka-9LQ" secondAttribute="centerX" id="BcW-pN-tM2"/>
@@ -84,7 +83,6 @@
                             <constraint firstItem="NSw-Ft-INe" firstAttribute="top" secondItem="eef-ug-0U0" secondAttribute="bottom" constant="50" id="y6R-JY-DFo"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="webView" destination="NSw-Ft-INe" id="udp-XE-Gkq"/>
                         <segue destination="60y-81-FDY" kind="unwind" identifier="unwindFromWeb" unwindAction="unwindFromWeb:" id="EJF-Ni-rM4"/>
@@ -93,7 +91,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fW-q5-mj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="60y-81-FDY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1123.5" y="-3.5"/>
+            <point key="canvasLocation" x="916" y="-239"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="uyE-WR-Gqf">
@@ -108,24 +106,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-c4-h0X">
-                                <rect key="frame" x="148" y="323" width="79" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QAW-ii-Z6l"/>
                                     <constraint firstAttribute="width" constant="79" id="byM-AK-PHN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3p6-c4-h0X" firstAttribute="centerY" secondItem="4ZN-MR-w2r" secondAttribute="centerY" id="AQz-Ic-pSN"/>
                             <constraint firstItem="3p6-c4-h0X" firstAttribute="centerX" secondItem="4ZN-MR-w2r" secondAttribute="centerX" id="wLQ-ad-K2Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="trF-nf-8h8"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fp7-ab-9qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
